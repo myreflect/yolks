@@ -28,6 +28,7 @@ LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolk
 LABEL       org.opencontainers.image.licenses=MIT
 
 ENV         DEBIAN_FRONTEND=noninteractive
+ENV         TZ=America/Sao_Paulo
 
 RUN         dpkg --add-architecture i386 \
             && apt update \
